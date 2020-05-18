@@ -1,13 +1,17 @@
 #!/bin/bash -x
-echo "Welcome to Employeewage"
 isPresent=1;
 randomCheck=$((RANDOM%2));
-if [ $isPresent -eq $randomCheck ];
+if [ $ispresent -eq $randomcheck ];
 then
-   echo "EMPLOYEE IS PRESENT";
+   empRatePerHr=20;
+   empHrs=8;
+   salary=$(($empHrs*$empRatePerHr));
 else
-    echo "EMPLOYEE IS ABSENT";
+   salary=0;
 fi
+
+
+
 
 
 
